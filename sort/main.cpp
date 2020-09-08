@@ -14,6 +14,7 @@
 #include "unit.h"
 #include "BubbleSort.h"
 #include "SelectSort.h"
+#include "ExchangeSort.h"
 
 using std::function;
 using std::vector;
@@ -29,7 +30,7 @@ vector<int> getRandomArray(int minE, int maxE, int size){
     return re;
 }
 
-bool isComplate(SortFunc<vector<int>::iterator> test, SortFunc<vector<int>::iterator> right, int times = 10000, int maxSize = 1000000){
+bool isComplate(function<void(vector<int>::iterator, vector<int>::iterator)> test, function<void(vector<int>::iterator, vector<int>::iterator)> right, int times = 10000, int maxSize = 10000){
     for(int i = 0; i < times; ++i){
         srand((unsigned int)time(0));
         vector<int> v1 = getRandomArray(0, rand() % maxSize, rand() % maxSize);
@@ -41,22 +42,13 @@ bool isComplate(SortFunc<vector<int>::iterator> test, SortFunc<vector<int>::iter
             if(v1[j] != v2[j])return false;
         }
     }
-    
     return true;
 }
-class A{
-public:
-    virtual void seet() = 0;
-};
-class B: public A{
-    void seet(){
-        
-    }
-};
+
 
 int main(int argc, const char * argv[]) {
     
-    auto re = isComplate(SelectSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
+    auto re = isComplate(ExchangeSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
     std::cout<<re<<std::endl;
     return 0;
 }

@@ -19,7 +19,7 @@ template <class Iterator = std::vector<int>::iterator>
 class BubbleSort: public SortFunc<Iterator>{
 public:
     void operator ()(Iterator begin, Iterator end) override {
-        while(begin > end){
+        while(begin < end){
             for(auto be = begin + 1; be < end; ++be){
                 if (*be < *(be - 1)) {
                     auto tmp = *be;

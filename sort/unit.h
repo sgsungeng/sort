@@ -12,7 +12,7 @@
 template<class Iterator = std::vector<int>::iterator>
 class SortFunc{
 public:
-    virtual void operator ()(Iterator begin, Iterator end){};
+    virtual void operator ()(Iterator begin, Iterator end)=0;
 };
 
 template<class Iterator=std::vector<int>::iterator>
