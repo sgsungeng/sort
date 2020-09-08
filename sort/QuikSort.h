@@ -24,11 +24,19 @@ private:
         Iterator j = end;
         auto key = *i;
         while(i < j){
-            if(key){
-                
+            while(*j >= key && i < j) --j;
+            if(i < j){
+                *i = *j;
+                *j = key;
+            }
+            while (*i <= key  && i < j)++i;
+            if(i<j){
+                *j = *i;
+                *i = key;
             }
         }
-        
+        quikSort(begin, i);
+        quikSort(j+1,end);
         
     }
 public:
