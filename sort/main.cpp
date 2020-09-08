@@ -15,6 +15,7 @@
 #include "BubbleSort.h"
 #include "SelectSort.h"
 #include "ExchangeSort.h"
+#include "InsertSort.h"
 
 using std::function;
 using std::vector;
@@ -48,7 +49,7 @@ bool isComplate(function<void(vector<int>::iterator, vector<int>::iterator)> tes
 
 int main(int argc, const char * argv[]) {
     
-    auto re = isComplate(ExchangeSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
+    auto re = isComplate(InsertSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
     std::cout<<re<<std::endl;
     return 0;
 }

@@ -24,7 +24,7 @@ public:
                 auto tmpE = *tmp;
                 auto tmp1 = tmp - 1;
                 while(tmp1 >= begin && *tmp1 > tmpE){
-                    *(tmp1 + 1) = *tmp;
+                    *(tmp1 + 1) = *tmp1;
                     --tmp1;
                 }
                 *(tmp1 + 1) = tmpE;

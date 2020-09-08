@@ -8,7 +8,6 @@
 
 #ifndef unit_h
 #define unit_h
-#include <iostream>
 template<class Iterator = std::vector<int>::iterator>
 class SortFunc{
 public:
@@ -23,4 +22,11 @@ public:
         std::sort(begin, end);
     }
 };
+
+void print(std::vector<int>::iterator begin, std::vector<int>::iterator end){
+    while(begin < end){
+        std::cout<<*begin<<" ";
+        ++begin;
+    }
+}
 #endif /* unit_h */
