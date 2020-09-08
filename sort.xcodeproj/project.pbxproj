@@ -30,6 +30,7 @@
 		4299CE2D25075CA9008B5237 /* SelectSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectSort.h; sourceTree = "<group>"; };
 		4299CE2E250764D5008B5237 /* ExchangeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeSort.h; sourceTree = "<group>"; };
 		4299CE2F25076769008B5237 /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
+		4299CE3025076CE2008B5237 /* ShellSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShellSort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 				4299CE2D25075CA9008B5237 /* SelectSort.h */,
 				4299CE2E250764D5008B5237 /* ExchangeSort.h */,
 				4299CE2F25076769008B5237 /* InsertSort.h */,
+				4299CE3025076CE2008B5237 /* ShellSort.h */,
 			);
 			path = sort;
 			sourceTree = "<group>";
