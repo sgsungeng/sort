@@ -13,6 +13,7 @@
 
 #include "unit.h"
 #include "BubbleSort.h"
+#include "SelectSort.h"
 
 using std::function;
 using std::vector;
@@ -55,7 +56,7 @@ class B: public A{
 
 int main(int argc, const char * argv[]) {
     
-    auto re = isComplate(BubbleSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
-//    cout<<re<<endl;
+    auto re = isComplate(SelectSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
+    std::cout<<re<<std::endl;
     return 0;
 }
