@@ -32,6 +32,8 @@
 		4299CE2F25076769008B5237 /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
 		4299CE3025076CE2008B5237 /* ShellSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShellSort.h; sourceTree = "<group>"; };
 		4299CE3125077537008B5237 /* QuikSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuikSort.h; sourceTree = "<group>"; };
+		4299CE452508565F008B5237 /* MergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		4299CE4625085B8D008B5237 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,8 @@
 				4299CE2F25076769008B5237 /* InsertSort.h */,
 				4299CE3025076CE2008B5237 /* ShellSort.h */,
 				4299CE3125077537008B5237 /* QuikSort.h */,
+				4299CE452508565F008B5237 /* MergeSort.h */,
+				4299CE4625085B8D008B5237 /* HeapSort.h */,
 			);
 			path = sort;
 			sourceTree = "<group>";

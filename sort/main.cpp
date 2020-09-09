@@ -18,6 +18,8 @@
 #include "InsertSort.h"
 #include "ShellSort.h"
 #include "QuikSort.h"
+#include "MergeSort.h"
+
 
 using std::function;
 using std::vector;
@@ -51,7 +53,7 @@ bool isComplate(function<void(vector<int>::iterator, vector<int>::iterator)> tes
 
 int main(int argc, const char * argv[]) {
     
-    auto re = isComplate(QuikSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
+    auto re = isComplate(MergeSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
     std::cout<<re<<std::endl;
     return 0;
 }
