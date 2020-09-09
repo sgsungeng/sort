@@ -19,7 +19,7 @@
 #include "ShellSort.h"
 #include "QuikSort.h"
 #include "MergeSort.h"
-
+#include "HeapSort.h"
 
 using std::function;
 using std::vector;
@@ -35,14 +35,14 @@ vector<int> getRandomArray(int minE, int maxE, int size){
     return re;
 }
 
-bool isComplate(function<void(vector<int>::iterator, vector<int>::iterator)> test, function<void(vector<int>::iterator, vector<int>::iterator)> right, int times = 10000, int maxSize = 10000){
+bool isComplate(function<void(vector<int>::iterator, vector<int>::iterator)> test, function<void(vector<int>::iterator, vector<int>::iterator)> baseline, int times = 10000, int maxSize = 10000){
     for(int i = 0; i < times; ++i){
         srand((unsigned int)time(0));
         vector<int> v1 = getRandomArray(0, rand() % maxSize, rand() % maxSize);
         vector<int> v2 = v1;
         
         test(v1.begin(), v1.end());
-        right(v2.begin(), v2.end());
+        baseline(v2.begin(), v2.end());
         for(int j = 0; j < v1.size(); ++j){
             if(v1[j] != v2[j])return false;
         }
@@ -53,7 +53,7 @@ bool isComplate(function<void(vector<int>::iterator, vector<int>::iterator)> tes
 
 int main(int argc, const char * argv[]) {
     
-    auto re = isComplate(MergeSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
+    auto re = isComplate(HeapSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
     std::cout<<re<<std::endl;
     return 0;
 }
