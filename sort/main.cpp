@@ -20,6 +20,7 @@
 #include "QuikSort.h"
 #include "MergeSort.h"
 #include "HeapSort.h"
+#include "RadixSort.h"
 
 using std::function;
 using std::vector;
@@ -53,7 +54,7 @@ bool isComplate(function<void(vector<int>::iterator, vector<int>::iterator)> tes
 
 int main(int argc, const char * argv[]) {
     
-    auto re = isComplate(HeapSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
+    auto re = isComplate(RadixSort<vector<int>::iterator>(),SystemSort<vector<int>::iterator>());
     std::cout<<re<<std::endl;
     return 0;
 }
