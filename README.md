@@ -1,11 +1,13 @@
-这个是复习总结排序算法的项目
-当前实现了
-冒泡排序
-选择排序
-交换排序
-插入排序
-Shell排序
-快速排序
-堆排序
-归并排序
-基数排序
+复习总结简单排序算法
+==
+当前复习了以下算法
+
+* [冒泡排序](./sort/BubbleSort.h)
+* [选择排序](./sort/SelectSort.h)
+* [交换排序](./sort/ExchangeSort.h)
+* [插入排序](./sort/InsertSort.h)
+* [Shell排序](./sort/ShellSort.h)
+* [快速排序](./sort/QuikSort.h)
+* [堆排序](./sort/HeapSort.h)
+* [归并排序](./sort/MergeSort.h)
+* [基数排序](./sort/RadixSort.h)
